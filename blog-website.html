@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        h1, h2 {
+            margin: 0 0 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <header>
+                <h1>My Blog</h1>
+            </header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="container">
+                <div class="main-content">
+                    <h2>Blog Post Title</h2>
+                    <p>Posted on May 27, 2024 by Author</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor. Proin fringilla venenatis nisi, a elementum turpis aliquam ac. Nullam sit amet eros eu mauris varius mollis vel eu neque.</p>
+                    <h2>Another Blog Post Title</h2>
+                    <p>Posted on May 20, 2024 by Author</p>
+                    <p>Maecenas facilisis, felis a malesuada ultrices, lacus magna pretium quam, id ultricies ligula felis ac justo. Sed sit amet dolor ac neque cursus condimentum a vitae ante.</p>
+                </div>
+                <div class="sidebar">
+                    <h2>About Me</h2>
+                    <p>This is a brief description about the blog author. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h2>Recent Posts</h2>
+                    <ul>
+                        <li><a href="#">Blog Post Title 1</a></li>
+                        <li><a href="#">Blog Post Title 2</a></li>
+                        <li><a href="#">Blog Post Title 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <p>© 2024 My Blog. All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

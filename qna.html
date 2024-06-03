@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="qna.css">
+    <title>Web Development Q&A</title>
+    <link rel="icon" type="img/png"   href="kasimu.png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <header>
+              <div class="logo">
+                <a class="logo-name" href="index.html"> <span style="color: #f10d0d;">K</span>asiwebsites
+                </a>
+                <div><i class="fa fa-phone" aria-hidden="true"></i>
+                 +27 12 345 6789 
+                 <br><i class="fab fa-whatsapp"></i>
+                 +27 64 141 0505
+                </div>
+             </div>
+             
+              <nav>
+                <a class="acive" href="index.html">Home</a>
+                <a href="service.html">Services</a>
+                <a href="qna.html">Q & A</a>
+            </nav>
+            </header>
+          </div>
+      </header>
+   <section>
+    <div class="qna-container">
+        <div class="qna-container"><h1>Kasiwebsites Q & A</h1></div>
+        <div class="qna-section">
+            <div class="question">1. What is web design?</div>
+            <div class="answer">
+                Web design refers to the creation and arrangement of web pages that make up a website. It involves the use of graphics, text, and multimedia elements to provide an appealing and user-friendly experience.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">2. What does a domain registrar involve?</div>
+            <div class="answer">
+                A domain registrar is a service that allows you to register a domain name for your website. This involves choosing a domain name, checking its availability, paying the registration fee, and managing the DNS settings.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">3. What is involved in company registering?</div>
+            <div class="answer">
+                Company registration involves legally registering your business with the appropriate government authorities. This process includes choosing a business name, completing registration forms, paying fees, and sometimes obtaining permits or licenses.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">4. What is web hosting?</div>
+            <div class="answer">
+                Web hosting is a service that provides storage space for your website on a server, making it accessible on the internet. Hosting providers offer different types of hosting plans such as shared, VPS, and dedicated hosting.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">5. What is web creation?</div>
+            <div class="answer">
+                Web creation, or web development, involves building a website from scratch or using a CMS (Content Management System) like WordPress. This process includes coding, designing, and configuring the site to function properly.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">6. What is web maintenance?</div>
+            <div class="answer">
+                Web maintenance involves regularly updating and managing a website to ensure it remains secure, up-to-date, and running smoothly. This includes updating content, fixing bugs, and improving performance.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">7. What is SEO service?</div>
+            <div class="answer">
+                SEO (Search Engine Optimization) service involves optimizing your website to rank higher in search engine results pages. This includes on-page optimization, keyword research, content creation, and link building.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">8. What is graphic design?</div>
+            <div class="answer">
+                Graphic design is the art of creating visual content to communicate messages. In web development, it includes creating logos, banners, infographics, and other visual elements that enhance the user experience.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">9. What is digital marketing?</div>
+            <div class="answer">
+                Digital marketing involves promoting products or services using digital channels such as social media, search engines, email, and websites. It includes strategies like SEO, PPC (Pay-Per-Click), content marketing, and social media marketing.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">10. What is involved in adding a Q&A section to my website?</div>
+            <div class="answer">
+                Adding a Q&A section to your website involves designing a user-friendly layout, writing relevant questions and answers, and using HTML, CSS, and JavaScript to make the section interactive. It helps in addressing common queries and improving user engagement.
+            </div>
+        </div>
+        <div class="qna-section">
+            <div class="question">11. What makes KasiWebsites unique?</div>
+            <div class="answer">
+                KasiWebsites stands out due to its commitment to delivering high-quality, customized web solutions that meet the specific needs of our clients. We offer:
+                <ul>
+                    <li><strong>Tailored Designs:</strong> Each website is uniquely crafted to reflect your brand identity and engage your target audience.</li>
+                    <li><strong>Responsive Layouts:</strong> Our designs are optimized for all devices, ensuring a seamless user experience on desktops, tablets, and smartphones.</li>
+                    <li><strong>SEO Optimization:</strong> We integrate SEO best practices to help your website rank higher in search engine results, driving more traffic to your site.</li>
+                    <li><strong>Comprehensive Support:</strong> From initial consultation to post-launch support, we are with you every step of the way to ensure your website’s success.</li>
+                    <li><strong>Affordable Pricing:</strong> We offer competitive pricing without compromising on quality, making professional web development accessible to businesses of all sizes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   </section>
+    <!-- JavaScript  -->
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

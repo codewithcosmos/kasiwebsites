@@ -1,0 +1,134 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: cursive, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.row {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    padding-right: 10px;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.contact {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea:hover{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    border: 2px solid #14b62a
+}
+form input:hover{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    border: 2px solid #14b62a
+}
+form button {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background: #85c797;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+button:hover{
+ border: #14b62a;
+ color: #b61414;
+ box-shadow: 0 4px 8px rgba(190,0,0,0.3);
+}
+button a {
+    text-decoration: none;
+    font-family: cursive;
+    color: #000000;
+}
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.social-icons a:hover {
+    color: #ff0000;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.terms a{
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.terms a:hover{
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col-6,
+    .col-12 {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+}
