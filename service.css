@@ -7,7 +7,7 @@ body {
 }
 
 * p{
-  font-family: roboto-flex, sans-serif;
+  font-family: lora, roboto-flex, sans-serif;
 }
 
 h1,h2,h3,h3,h4,h5,h6 {
@@ -39,6 +39,7 @@ nav {
     gap: 10px;
     font-weight: bold;
 }
+
 nav a:hover{
     color: #ff0000;
     border-bottom: #fff 2px solid;
