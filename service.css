@@ -25,11 +25,12 @@ header {
 }
 header span {
   float: left;
-  font-size: 1.8em;
-  padding-left: 20px;
+  font-size: 2em;
   padding: 10px;
-  background: #f91717;
-  color: #ececec;
+  margin-top: 30px;
+  color: #fcfcfc;
+  background: #ff0000;
+  border-radius: 8px;
 }
 nav {
     position: absolute;
