@@ -3,7 +3,6 @@ body {
     background: #ffffff;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: hsl(0, 9%, 90%);
 }
 
 * p{
@@ -40,10 +39,16 @@ nav {
     gap: 10px;
     font-weight: bold;
 }
-
+nav a {
+  color: #eaeaea;
+  padding: 15px;
+  text-decoration: none;
+  text-align: right;
+  font-size: 1.2em;
+  background:  rgba(186, 99, 82, 0.837);;
+}
 nav a:hover{
     color: #ff0000;
-    border-bottom: #fff 2px solid;
 }
 
   /* Heading CSS */
@@ -74,12 +79,7 @@ nav a:hover{
     margin-bottom: 20px;
 }
 
-nav a {
-    color: rgb(234, 234, 234);
-    padding: 20px;
-    text-decoration: none;
-    text-align: right;
-}
+
 /* CARD Style */
 .cards-container {
   display: flex;
