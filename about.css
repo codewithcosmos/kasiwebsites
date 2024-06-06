@@ -118,13 +118,18 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .team p {
-    color: #090909;
+    color: #940909;
 }
-p {
-    color: #000000;
+p a{
+    color: #0811c4;
     line-height: 1.6;
     font-weight: bold;
+    text-decoration: none;
 }
+p a:focus-visible {
+    color: #cf0b0b;
+}
+
 footer {
     background-color: #333;
     color: #fff;
