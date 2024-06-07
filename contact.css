@@ -80,7 +80,10 @@ h2 {
 p {
     color: #555;
     line-height: 1.6;
-    font-family: cursive;
+}
+p a {
+    text-decoration: none;
+
 }
 
 .developer-description {
@@ -94,7 +97,6 @@ p {
 }
 
 
-/* Basic Styling */
 section {
     padding: 1em;
     margin: 1em;
@@ -129,13 +131,14 @@ section {
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
+
 .row {
     margin-bottom: 20px;
     display: flex;
 }
 
 .col-6 {
-    flex: 0 0 46%;
+    flex: 0 0 44%;
     padding-right: 40px;
     color: #333;
 }
@@ -153,6 +156,9 @@ label {
     text-align: center;
     padding-top: 20px;
     font-size: 2em;
+}
+.contact h1 {
+    text-align: center;
 }
 
 input[type="text"],
