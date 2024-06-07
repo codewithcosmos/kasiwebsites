@@ -187,3 +187,14 @@ CHANGELOG.md
 .vscode/launch.json
 .vscode/jsconfig.json
 .vscode/extensions.json
+# Ignore nodemon log files
+nodemon-debug.log
+
+# Ignore nodemon's configuration files
+nodemon.json
+
+# Ignore nodemon's cache
+.cache/
+
+# Ignore node_modules if not already ignored
+node_modules/
