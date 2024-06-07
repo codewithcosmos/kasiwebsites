@@ -1,0 +1,24 @@
+<!-- public/quote.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote</title>
+  <link rel="stylesheet" href="quoteandinvoice.css">
+  <script src="quote.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Your Quote</h1>
+  </header>
+  <main>
+    <section id="quote-details">
+      <!-- Quote details will be populated by JavaScript -->
+    </section>
+    <button id="generate-invoice" onclick="generateInvoice()">Generate Invoice</button>
+  </main>
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- dashboard.html -->
+<h1>Dashboard</h1>
+<div>
+  <a href="quote.html">View Quotes</a>
+  <a href="invoice.html">View Invoices</a>
+</div>
+
+// Protect these routes in server.js
+app.get('/quote.html', authenticate, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'quote.html'));
+});
+
+app.get('/invoice.html', authenticate, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'invoice.html'));
+});
+
+app.get('/dashboard.html', authenticate, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+});
+
+<script src="script.js"></script>
+</body>
+</html>
