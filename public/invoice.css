@@ -1,0 +1,99 @@
+/* Basic styles for the entire document */
+body {
+    font-family: 'Lora';
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, article, aside {
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #007BFF;
+}
+
+address {
+    font-style: normal;
+    text-align: center;
+}
+span {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: Lora,roboto,'Sans';
+}
+table.meta, table.inventory {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+table.meta th, table.meta td, table.inventory th, table.inventory td {
+    border: 1px solid #eaeaea;
+    padding: 0.5em;
+    text-align: left;
+}
+
+table.meta th {
+    background: #f2f2f2;
+    color: #007BFF;
+}
+
+table.inventory th {
+    background: #007BFF;
+    color: #fff;
+}
+
+table.balance {
+    width: auto;
+    float: right;
+    margin-top: 1em;
+}
+
+table.balance th, table.balance td {
+    text-align: right;
+    padding: 0.5em;
+}
+
+aside {
+    border-top: 1px solid #eaeaea;
+    padding-top: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        margin: 0;
+    }
+    header, article, aside {
+        max-width: none;
+        padding: 0;
+    }
+    header {
+        border-bottom: none;
+    }
+    table.meta, table.inventory {
+        width: 100%;
+    }
+    table.balance {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    aside {
+        border-top: none;
+    }
+}

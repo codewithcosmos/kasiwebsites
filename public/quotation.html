@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice</title>
+    <title>Quotation</title>
     <link rel="icon" type="img/png" href="kasimu.png">
-    <!-- CSS Styles -->
     <link rel="stylesheet" href="invoice.css">
 </head>
 <body>
     <header>
-        <h1>Invoice</h1>
+        <h1>Quotation</h1>
         <address>
             <p><span style="color: #f10d0d; align-content: center;">Kasiwebsites</span></p>
+            </p>
             <p>123 Your Street, JHB</p>
-            <p>Gauteng, S A</p>
+            <p>Gauteng, South Africa</p>
             <p>Phone: (123) 456-7890</p>
         </address>
     </header>
@@ -27,16 +27,16 @@
         <section>
             <table class="meta">
                 <tr>
-                    <th><span>Invoice #</span></th>
-                    <td><span id="invoice-number">INV101138</span></td>
+                    <th><span>Quotation #</span></th>
+                    <td><span id="quotation-number">Q101138</span></td>
                 </tr>
                 <tr>
                     <th><span>Date</span></th>
-                    <td><span id="invoice-date">January 1, 2024</span></td>
+                    <td><span id="quotation-date">January 1, 2024</span></td>
                 </tr>
                 <tr>
-                    <th><span>Amount Due</span></th>
-                    <td><span id="invoice-total">R0.00</span></td>
+                    <th><span>Amount</span></th>
+                    <td><span id="quotation-total">R0.00</span></td>
                 </tr>
             </table>
         </section>
@@ -51,7 +51,7 @@
                         <th><span>Price</span></th>
                     </tr>
                 </thead>
-                <tbody id="invoice-items">
+                <tbody id="quotation-items">
                     <!-- Items will be populated by JavaScript -->
                 </tbody>
             </table>
@@ -60,15 +60,15 @@
             <table class="balance">
                 <tr>
                     <th><span>Total</span></th>
-                    <td><span id="invoice-total">R0.00</span></td>
+                    <td><span id="quotation-total">R0.00</span></td>
                 </tr>
             </table>
         </section>
     </article>
     <aside>
         <h2>Additional Notes</h2>
-        <p>Thank you for your business. Please make the payment by the due date.</p>
+        <p>Thank you for considering our services. Please contact us if you have any questions.</p>
     </aside>
-    <script src="invoice.js"></script>
+    <script src="quotation.js"></script>
 </body>
 </html>
