@@ -198,3 +198,17 @@ nodemon.json
 
 # Ignore node_modules if not already ignored
 node_modules/
+# Node.js
+node_modules/
+npm-debug.log
+.DS_Store
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# nodemon
+nodemon-debug.log
+.cache/

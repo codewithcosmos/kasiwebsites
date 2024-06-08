@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    padding: 20px;
+}
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+.plan {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.plan h3 {
+    margin-top: 0;
+}
+.plan .price {
+    font-size: 24px;
+    color: #E67E22;
+}
+.features {
+    list-style: none;
+    padding: 0;
+}
+.features li {
+    margin: 10px 0;
+}
+.responsive-section, .faq-section, .maintenance-section {
+    margin-top: 40px;
+}
+.maintenance-plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.maintenance-plan {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.faq {
+    list-style: none;
+    padding: 0;
+}
+.faq li {
+    margin: 10px 0;
+}
+.contact-section {
+    text-align: center;
+    margin-top: 20px;
+}
+footer {
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+    .plans, .maintenance-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+}

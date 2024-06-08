@@ -1,38 +1,80 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const fetchCurrentQuotationNumber = async () => {
-      const response = await fetch('http://localhost:3000/quotationNumberTracker');
-      const tracker = await response.json();
-      return tracker.currentQuotationNumber;
-    };
-  
-    const incrementQuotationNumber = async (currentNumber) => {
-      await fetch('http://localhost:3000/quotationNumberTracker', {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ currentQuotationNumber: currentNumber + 1 })
-      });
-    };
-  
-    const createQuotationNumber = (currentNumber) => {
-      return `Q${String(currentNumber).padStart(6, '0')}`;
-    };
-  
-    const generateQuotation = async () => {
-      const currentQuotationNumber = await fetchCurrentQuotationNumber();
-      const newQuotationNumber = createQuotationNumber(currentQuotationNumber);
-  
-      const newQuotation = {
-        quotationNumber: newQuotationNumber,
-        date: new Date().toLocaleDateString(),
-        client: {
-          name: "Client Name", // Replace with dynamic data as needed
-          address: "Client Address" // Replace with dynamic data as needed
-        },
-        services: [
-          {
-            name: "Simple Website",
-            description: "Start sharing your thoughts and ideas with a blog platform",
-           
-  
+// public/quotation.js or similar
+const API_URL = 'http://localhost:3001'; // Adjust if needed
+
+async function addToQuote(serviceId) {
+  const response = await fetch(`${API_URL}/services/${serviceId}`);
+  const service = await response.json();
+
+  const quoteResponse = await fetch(`${API_URL}/quotations`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      service,
+      quotationNumber: await getNextQuotationNumber()
+    })
+  });
+
+  if (quoteResponse.ok) {
+    alert('Service added to quote!');
+  } else {
+    alert('Failed to add service to quote.');
+  }
+}
+
+async function addToInvoice(serviceId) {
+  const response = await fetch(`${API_URL}/services/${serviceId}`);
+  const service = await response.json();
+
+  const invoiceResponse = await fetch(`${API_URL}/invoices`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      service,
+      invoiceNumber: await getNextInvoiceNumber()
+    })
+  });
+
+  if (invoiceResponse.ok) {
+    alert('Service added to invoice!');
+  } else {
+    alert('Failed to add service to invoice.');
+  }
+}
+
+async function getNextQuotationNumber() {
+  const response = await fetch(`${API_URL}/quotationNumberTracker`);
+  const data = await response.json();
+  const nextNumber = data.currentQuotationNumber;
+
+  // Update the quotation number tracker
+  await fetch(`${API_URL}/quotationNumberTracker`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ currentQuotationNumber: nextNumber + 1 })
+  });
+
+  return nextNumber;
+}
+
+async function getNextInvoiceNumber() {
+  const response = await fetch(`${API_URL}/invoiceNumberTracker`);
+  const data = await response.json();
+  const nextNumber = data.currentInvoiceNumber;
+
+  // Update the invoice number tracker
+  await fetch(`${API_URL}/invoiceNumberTracker`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ currentInvoiceNumber: nextNumber + 1 })
+  });
+
+  return nextNumber;
+}

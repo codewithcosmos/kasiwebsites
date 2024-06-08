@@ -1,28 +1,17 @@
 {
-  "invoices": [
-    {
-      "id": 1,
-      "invoiceNumber": "INV0001",
-      "date": "2024-01-01",
-      "client": {
-        "name": "Client Name",
-        "address": "Client Address"
-      },
-      "services": [
-        { "id": 1, "name": "Simple Website", "description": "Start sharing your thoughts and ideas with a blog platform", "price": 500 },
-        { "id": 2, "name": "Basic Website", "description": "Standard website with additional features", "price": 800 },
-        { "id": 3, "name": "Standard Website", "description": "Standard website with additional features", "price": 1800 },
-        { "id": 4, "name": "Portfolio Website", "description": "Showcase your work with a professional portfolio", "price": 1000 },
-        { "id": 5, "name": "Community Website", "description": "Engage with your community through a dedicated platform", "price": 2200 },
-        { "id": 6, "name": "Landing Page Website", "description": "Attract visitors with a compelling landing page", "price": 900 },
-        { "id": 7, "name": "Blog", "description": "Start sharing your thoughts and ideas with a blog platform", "price": 1000 },
-        { "id": 8, "name": "Simple e-Commerce", "description": "Start selling online with a simple e-commerce platform", "price": 3600 },
-        { "id": 9, "name": "Advanced e-Commerce", "description": "Advanced features for a professional e-commerce site", "price": 6000 }
-      ],
-      "total": 0
-    }
+  "services": [
+    { "id": 1, "name": "Simple Website", "description": "Start sharing your thoughts and ideas with a blog platform", "price": 500 },
+    { "id": 2, "name": "Basic Website", "description": "Standard website with additional features", "price": 800 },
+    { "id": 3, "name": "Standard Website", "description": "Standard website with additional features", "price": 1800 },
+    { "id": 4, "name": "Portfolio Website", "description": "Showcase your work with a professional portfolio", "price": 1000 },
+    { "id": 5, "name": "Community Website", "description": "Engage with your community through a dedicated platform", "price": 2200 },
+    { "id": 6, "name": "Landing Page Website", "description": "Attract visitors with a compelling landing page", "price": 900 },
+    { "id": 7, "name": "Blog", "description": "Start sharing your thoughts and ideas with a blog platform", "price": 1000 },
+    { "id": 8, "name": "Simple e-Commerce", "description": "Start selling online with a simple e-commerce platform", "price": 3600 },
+    { "id": 9, "name": "Advanced e-Commerce", "description": "Advanced features for a professional e-commerce site", "price": 6000 }
   ],
   "quotations": [],
+  "invoices": [],
   "quotationNumberTracker": {
     "currentQuotationNumber": 1
   },
