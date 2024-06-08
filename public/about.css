@@ -16,10 +16,15 @@ bbody {
 h1,h2,h3,h3,h4,h5,h6 {
     font-family: pt-sans, system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu;
 }
+small{
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
 
 header {
     position: relative;
-    background-image: url('images/about.jpg'); /* Replace with your background image */
+    background-image: url('images/about-us.svg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
