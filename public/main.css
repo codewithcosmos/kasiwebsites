@@ -156,11 +156,13 @@ section {
   margin-bottom: 40px;
 }
 .content-section img {
-  width: 40%;
+  width: 50%;
   border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+  margin-top: 20px;
 }
 .content-text {
-  width: 60%;
+  width: 50%;
   padding-left: 20px;
 }
 .pricing h2 {
@@ -225,43 +227,53 @@ section {
   border-radius: 5px;
  }
 /* End Service card */
+.pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    margin-top: 20px;
+}
+
 .pricing th, .pricing td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
 }
 
 .pricing th {
-  background-color: #f4f4f4;
+    background-color: #0056b3;
+    color: #f4f4f4;
 }
 
 .pricing td {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .call-to-action {
-  text-align: center;
-  background: #0056b3;
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+    text-align: center;
+    background: #0056b3;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .call-to-action a {
-  color: #fff;
-  text-decoration: none;
-  background: #ff6b00;
-  padding: 10px 20px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    background: #ff6b00;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .call-to-action a:hover {
-  background: #e03c13;
-  box-shadow: 0 4px 8px rgba(190,0,0,0.3);
-
+    background: #e65a00;
 }
+
+
+
 .link a{
   text-decoration: none;
 }
