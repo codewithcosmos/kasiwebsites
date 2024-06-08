@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout Example</title>
+    <style>
+        body {
+            background-color: #1c1e22;
+            font-family: Arial, sans-serif;
+            color: #adb5bd;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #343a40;
+            border: 1px solid #444;
+            border-radius: 8px;
+            width: 300px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .card-img-top {
+            height: 180px;
+            background-color: #6c757d;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-body {
+            padding: 16px;
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 14px;
+        }
+
+        .card-footer {
+            background-color: #212529;
+            padding: 12px 16px;
+            border-top: 1px solid #444;
+            color: #adb5bd;
+            text-align: center;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .card-footer button {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .card-footer button:hover {
+            background-color: #5a6268;
+        }
+
+        .sample-button {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 0 auto 16px auto; /* Center align and add margin at the bottom */
+        }
+
+        .sample-button:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-img-top">Image cap</div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="sample-button">View Sample</button>
+            </div>
+            <div class="card-footer">
+                <button>Button 1</button>
+                <button>Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-top">Image cap</div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <button class="sample-button">View Sample</button>
+            </div>
+            <div class="card-footer">
+                <button>Button 1</button>
+                <button>Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-top">Image cap</div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <button class="sample-button">View Sample</button>
+            </div>
+            <div class="card-footer">
+                <button>Button 1</button>
+                <button>Button 2</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

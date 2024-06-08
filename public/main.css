@@ -1,4 +1,3 @@
-
 /* CSS for navbar */
 .navbar {
     position: fixed;
@@ -101,27 +100,22 @@ nav ul li a {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px;
-    width: 30%;
+    width: 300px;
+    height: 500px;
     text-align: center;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
+  
  .card h3{
   background-color: #89aeea;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   width: 100%;
   margin-top: 0;
-  height: 30px;
-  padding: 3px;
- }
- .card p{
-  margin: 14px;
- }
-  .foot, .foot a {
-    text-decoration: none; 
-    color: #ff0000;
-    font-weight: bold;
-    background-color: #d4d3d3;
-    font-family: cursive;
+  padding: 20px;
+  font-size: 1.4em;
  }
  
 main {
@@ -180,36 +174,57 @@ section {
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
-
-.services {
+/* Service Card */
+.service-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 10px;
 }
-
-.service {
-  flex: 1 1 calc(50% - 20px);
-  box-sizing: border-box;
-  padding: 20px;
-  margin-bottom: 20px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+.service-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  text-align: center;
 }
-
-.service h3 {
-  color: #0056b3;
+.service-card h3 {
   margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
 }
-
-.pricing table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
 }
-
+.service-card ul li {
+  text-align: left;
+  margin: 10px 0;
+  padding-left: 50%;
+  position: relative;
+}
+.service-card ul li::before {
+  content: "✅";
+  color: green;
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+.card-footer{
+  display: flex;
+  color: #6c757d; /* Gray text color */
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 0;
+  justify-content: space-around;
+ }
+ .card-footer button {
+  margin-bottom: 0;
+  border-radius: 5px;
+ }
+/* End Service card */
 .pricing th, .pricing td {
   border: 1px solid #ddd;
   padding: 10px;
@@ -249,7 +264,6 @@ section {
 }
 .link a{
   text-decoration: none;
-
 }
 
 
@@ -257,6 +271,9 @@ section {
 @media (max-width: 768px) {
   .service {
       flex: 1 1 100%;
+  }
+  .service-card {
+    width: 100%;
   }
 
   .pricing table {

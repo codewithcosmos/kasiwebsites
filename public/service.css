@@ -1,3 +1,4 @@
+/* SERVICE PAGE STYLES */
 body {
     margin: 0;
     background: #ffffff;
@@ -79,7 +80,7 @@ nav a:hover{
 }
 
 
-/* CARD Style */
+/* SERVICE PAGE - CARD Style */
 .cards-container {
   display: flex;
   flex-wrap: wrap;
