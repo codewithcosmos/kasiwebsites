@@ -107,7 +107,7 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
- .card h3{
+ .card h2, h3{
   background-color: #89aeea;
   display: flex;
   justify-content: center;
