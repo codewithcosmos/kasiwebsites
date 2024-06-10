@@ -119,14 +119,13 @@ nav a:hover{
   padding: 3px;
   text-align: center;
 }
-
+/* Icon Styles */
 .footer-link {
   padding-top: 5px;
   color: #007BFF;
   text-decoration: none;
   font-weight: bold;
 }
-
 .footer-link:hover {
 color: #f91717;}
 

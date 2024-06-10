@@ -95,7 +95,7 @@ button {
 button:hover{
  border: #14b62a;
  color: #b61414;
- box-shadow: 0 4px 8px rgba(190,0,0,0.3);
+ box-shadow: 5px 4px 8px rgba(0,0,0,0.3);
 }
 button a {
     text-decoration: none;

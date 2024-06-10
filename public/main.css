@@ -107,8 +107,9 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
- .card h2, h3{
-  background-color: #89aeea;
+ .card h2, h3 {
+  background-color: #007BFF;
+  color: #f4f4f4;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -165,8 +166,8 @@ section {
   width: 50%;
   padding-left: 20px;
 }
-.pricing h2 {
-  font-size: 1.8em;
+.pricing th {
+  font-size: 1.4em;
   font-weight: bold;
   background: #0056b3;
   color: #d4d3d3;
@@ -194,7 +195,7 @@ section {
 .service-card h3 {
   margin-top: 0;
   font-size: 1.5em;
-  color: #333;
+  color: #d8d5d5;
 }
 .service-card ul {
   list-style: none;
@@ -226,6 +227,7 @@ section {
   margin-bottom: 0;
   border-radius: 5px;
  }
+
 /* End Service card */
 .pricing table {
     width: 100%;
@@ -241,9 +243,11 @@ section {
     text-align: left;
 }
 
-.pricing th {
+.pricing th, h2 {
     background-color: #0056b3;
     color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
 }
 
 .pricing td {
@@ -269,7 +273,7 @@ section {
 }
 
 .call-to-action a:hover {
-    background: #e65a00;
+    background: #ff0000;
 }
 
 
